@@ -1,6 +1,7 @@
 package com.example.ch11_jetpack2
 
 import android.content.Context
+import android.graphics.Canvas
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -99,6 +100,12 @@ class FragOne : Fragment() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(activity)
             adapter = recyclerAdapter
+            addItemDecoration(object : RecyclerView.ItemDecoration() {
+                override fun onDraw(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+                    c.density = 100
+                    super.onDraw(c, parent, state)
+                }
+            })
         }
         return binding.root
     }

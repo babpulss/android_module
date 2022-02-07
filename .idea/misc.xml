@@ -21,9 +21,18 @@
         <entry key="..\:/project/modules/ch11_jetpack2/src/main/res/layout/frag_two.xml" value="0.20969202898550723" />
         <entry key="..\:/project/modules/ch11_jetpack2/src/main/res/layout/item.xml" value="0.20969202898550723" />
         <entry key="..\:/project/modules/ch11_jetpack2/src/main/res/menu/toolbar_menu.xml" value="0.3703125" />
+        <entry key="..\:/project/modules/myappbar/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
         <entry key="..\:/project/modules/mydrawer/src/main/res/layout/activity_main.xml" value="0.18009118541033434" />
+        <entry key="..\:/project/modules/myfloatingactionbutton/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/project/modules/myfragment/src/main/res/layout/activity_main.xml" value="0.2545289855072464" />
         <entry key="..\:/project/modules/myfragment/src/main/res/layout/frag.xml" value="0.2545289855072464" />
+        <entry key="..\:/project/modules/mymaterial/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/project/modules/mymaterial/src/main/res/layout/header_navigation.xml" value="0.19010416666666666" />
+        <entry key="..\:/project/modules/mymaterial/src/main/res/menu/menu_navigation.xml" value="0.19010416666666666" />
+        <entry key="..\:/project/modules/mynavigationview/src/main/res/layout/activity_main.xml" value="0.14583333333333334" />
+        <entry key="..\:/project/modules/mynavigationview/src/main/res/layout/fragment_one.xml" value="0.3703125" />
+        <entry key="..\:/project/modules/mynavigationview/src/main/res/layout/navgation_header.xml" value="0.14583333333333334" />
+        <entry key="..\:/project/modules/mynavigationview/src/main/res/menu/menu_navigation.xml" value="0.19010416666666666" />
         <entry key="..\:/project/modules/myrecycler/src/main/res/layout/activity_main.xml" value="0.2677083333333333" />
         <entry key="..\:/project/modules/myrecycler/src/main/res/layout/item_main.xml" value="0.2677083333333333" />
         <entry key="..\:/project/modules/myrecycler/src/main/res/layout/recycler.xml" value="0.2677083333333333" />
@@ -33,6 +42,9 @@
         <entry key="..\:/project/modules/myrecycler2/src/main/res/layout/part.xml" value="0.2545289855072464" />
         <entry key="..\:/project/modules/myrecycler3/src/main/res/layout/activity_main.xml" value="0.3703125" />
         <entry key="..\:/project/modules/myrecycler3/src/main/res/layout/item.xml" value="0.3703125" />
+        <entry key="..\:/project/modules/mytablayout/src/main/res/layout/activity_main.xml" value="0.2884963768115942" />
+        <entry key="..\:/project/modules/mytablayout/src/main/res/layout/frag_one.xml" value="0.14583333333333334" />
+        <entry key="..\:/project/modules/mytablayout/src/main/res/layout/frag_two.xml" value="0.14583333333333334" />
         <entry key="..\:/project/modules/myviewpager/src/main/res/layout/activity_main.xml" value="0.18009118541033434" />
         <entry key="..\:/project/modules/myviewpager/src/main/res/layout/frag_one.xml" value="0.18009118541033434" />
         <entry key="..\:/project/modules/myviewpager/src/main/res/layout/frag_two.xml" value="0.18009118541033434" />
