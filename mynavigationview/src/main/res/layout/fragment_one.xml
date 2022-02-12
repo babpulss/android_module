@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.recyclerview.widget.RecyclerView
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/recyclerview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width=""
+        android:layout_height="">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width=""
+            android:layout_height="">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width=""
+                android:layout_height="">
+
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width=""
+                android:layout_height="">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:scrollIndicators="
+                    android:layout_width=""
+                    android:layout_height="">
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                    android:layout_width=""
+                    android:layout_height=""
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width=""
+                android:layout_height="">
+
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 </androidx.recyclerview.widget.RecyclerView>
