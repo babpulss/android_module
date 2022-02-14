@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mytodo">
-
+    package="com.example.myreceiver">
 
     <application
         android:allowBackup="true"
@@ -10,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity
-            android:name=".AddActivity"
-            android:exported="false" />
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,12 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".MyReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

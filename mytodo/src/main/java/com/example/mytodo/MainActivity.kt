@@ -1,7 +1,13 @@
 package com.example.mytodo
 
+import android.content.BroadcastReceiver
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
+import android.content.pm.PackageManager
+import android.os.BatteryManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -16,6 +22,7 @@ import com.example.mytodo.databinding.ActivityMainBinding
 import com.example.mytodo.databinding.ItemBinding
 
 lateinit var data: MutableList<String>
+
 class MainActivity : AppCompatActivity() {
     val adapter = Adapter()
     val result = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
@@ -31,12 +38,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putStringArrayList("data", ArrayList(data))
         super.onSaveInstanceState(outState)
-        Log.d(TAG, "onSaveInstanceState: world")
     }
-    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
-        super.onSaveInstanceState(outState, outPersistentState)
-        Log.d(TAG, "onSaveInstanceState: hello")
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
@@ -50,6 +53,14 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener {
             result.launch(Intent(this, AddActivity::class.java))
         }
+
+        binding.textView.setOnClickListener {
+        }
+
+//        registerReceiver(MyReceiver(), IntentFilter(Intent.ACTION_SCREEN_OFF))
+//        binding.textView.setOnClickListener {
+//            sendBroadcast(Intent(this, MyReceiver::class.java))
+//        }
     }
 }
 
